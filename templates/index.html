@@ -6,91 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <title>B is for Bitcoin</title>
+    <style>
+      .blue{
+        background-image:url("{{ url_for('static', filename='images/blue_bg.png') }}");
+      }
+    </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">B is for Bitcoin</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon ml-auto"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About the book</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Testimonials</a>
-        </li>
-      </ul>
-      <button class="btn btn-outline-success" type="submit">Buy Now!</button>
-    </div>
-  </nav>
+  
 
-  <div class="jumbotron jumbrtron-fluid">
-    <div class="row">
-      <section class="col-md">
-        <p>A lovingly written and illustrated children's primer on Bitcoin from Algorithm to Zero knoweldge proof.</p>
-        <button class="btn">Buy Now!</button>
-      </section>
-      <section class="col-md">
-        <p>Section that will have the picture.</p>
-      </section>
+
+    <div class="container-fluid blue">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">B is for Bitcoin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon ml-auto"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About the book</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Testimonials</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary" type="submit">Buy Now!</button>
+            </div>
+          </nav>
+      <div class="row">
+        <section class="col-md-6 d-flex align-items-center">
+          <div>
+              <h2>A lovingly written and illustrated children's primer on Bitcoin from Algorithm to Zero knoweldge proof.</h2>
+              <form>
+                <div class="form-group">
+                  <!-- <label for="exampleFormControlSelect1">How many would you like?</label> -->
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1 copy for yourself (I mean your child)</option>
+                    <option>2 for you and a special friend</option>
+                    <option>5 for your startup</option>
+                    <option>10 for all the cousins</option>
+                    <option>20 as holiday presents</option>
+                    <option>50 for all your partners</option>
+                    <option value="">100 for everyone you know!!!</option>
+                  </select>
+                </div>
+              </form>
+              <button class="btn btn-primary">Buy Now!</button>
+              <p><small>Ships with love from San Francisco in 3-5 days</small></p>
+          </div>         
+        </section>
+        <section class="col-md-6">
+          <img class="img-fluid" src="{{ url_for('static', filename='images/test1.png') }}" alt="B is fot Bitcoin Roller Coaster">          
+        </section>
+      </div>
     </div>
-  </div>
+  <!-- </div> -->
 
   <div class="container-fluid">
-    <div class="row">
-      <section class="col-md">
-        <p>This is where the picture will go that has the bunnies</p>
+    <div class="row pb-5 pt-5">
+      <section class="col-md-6 px-3">
+          <img class="img-fluid" src="{{ url_for('static', filename='images/test.png') }}" alt="B is fot Bitcoin Roller Coaster">  
       </section>
-      <section class="col-md">
-        <h2>Section that talks about the book and charity.</h2>
-        <p>Poutine listicle leggings, pitchfork glossier skateboard wayfarers lomo thundercats neutra bespoke. Blog tofu tacos vaporware, vinyl art party fixie umami marfa lumbersexual. Beard lomo wayfarers, forage typewriter +1 live-edge. Artisan tilde chambray, before they sold out letterpress distillery kickstarter bespoke umami poutine gastropub tousled keytar. Cold-pressed iceland single-origin coffee quinoa raclette tumblr pabst chartreuse +1 polaroid next level.</p>
+      <section class="col-md-6 d-flex align-items-center">
+        <div>
+          <h2>Section that talks about the book and charity.</h2>
+          <p>Poutine listicle leggings, pitchfork glossier skateboard wayfarers lomo thundercats neutra bespoke. Blog tofu tacos vaporware, vinyl art party fixie umami marfa lumbersexual. Beard lomo wayfarers, forage typewriter +1 live-edge. Artisan tilde chambray, before they sold out letterpress distillery kickstarter bespoke umami poutine gastropub tousled keytar. Cold-pressed iceland single-origin coffee quinoa raclette tumblr pabst chartreuse +1 polaroid next level.</p>
+        </div>
       </section>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center  pb-5 pt-5">
       <div class="col-md-6">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/znliDeZOZx0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="row justify-content-center">
-    <div class="card col-md-3" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
-    <div class="card col-md-3" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-      </div>
-      <div class="card col-md-3" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+  <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          </div>
         </div>
       </div>
   </div>
-
-  <footer>
-    <p>B is For Bitcoin</p>
-  </footer>
+  <div class="container-fluid">
+      <footer class="border-top">
+        <p>B is for Bitcoin</p>
+      </footer>
+    </div>
 
 
 
