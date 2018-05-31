@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'DK-Canoodle-Regular';
+    src: url('../fonts/DK-Canoodle-Regular.ttf.woff'),
+    url('../fonts/DK-Canoodle-Regular.ttf.svg#DK-Canoodle-Regular'),
+    url('../fonts/DK-Canoodle-Regular.ttf.eot'),
+    url('../fonts/DK-Canoodle-Regular.ttf.eot?#iefix');
+    font-weight: normal;
+    font-style: normal;
+}
+.font {
+  font-family: 'DK-Canoodle-Regular';
+  color: #3B5F74;
+}
+p,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-brand {
+  font-size: 2em;
+}
+.blue {
+    background-image: url('../images/blue_bg.png');
+}
+.hero {
+  padding-top: 5.25em;
+}
+.hero-img {
+  padding: 1em 0;
+}
+.hero-blurb {
+  font-weight: 300;
+}
+  #mainNav {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: white;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  @media(min-width: 992px) {
+    #mainNav {
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+
+#mainNav.navbar-shrink {
+  border-color: rgba(34, 34, 34, 0.1);
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.13);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.13);
+}
