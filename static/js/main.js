@@ -26,6 +26,10 @@
     //   offset: 54
     // });
 
+    // manual carousel controls
+    $('.next').click(function () { $('.carousel').carousel('next'); return false; });
+    $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
+
     // Collapse Navbar
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
