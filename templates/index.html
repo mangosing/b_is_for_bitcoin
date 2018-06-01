@@ -61,9 +61,9 @@
               </select>
             </div>
           </form>
-          <button class="btn btn-primary">Buy Now!</button>
+          <button class="btn btn-primary btn-block">Buy Now!</button>
           <p>
-            <small>Ships with love from San Francisco in 3-5 days</small>
+            <small class="ships">Ships with love from San Francisco in 3-5 days</small>
           </p>
         </div>
       </section>
@@ -73,12 +73,12 @@
 
   <div class="container-fluid">
     <div class="row pb-5 pt-5">
-      <section class="col-md-6 px-3">
+      <section class="col-md-6 px-3 mb-3">
         <img class="img-fluid" src="{{ url_for('static', filename='images/test.png') }}" alt="B is fot Bitcoin Roller Coaster">
       </section>
       <section class="col-md-6 d-flex align-items-center">
         <div>
-          <h2>Section that talks about the book and charity.</h2>
+          <h2 class="font pb-2">Section that talks about the book and charity.</h2>
           <p>Poutine listicle leggings, pitchfork glossier skateboard wayfarers lomo thundercats neutra bespoke. Blog tofu tacos
             vaporware, vinyl art party fixie umami marfa lumbersexual. Beard lomo wayfarers, forage typewriter +1 live-edge.
             Artisan tilde chambray, before they sold out letterpress distillery kickstarter bespoke umami poutine gastropub
@@ -88,8 +88,9 @@
       </section>
     </div>
 
-    <div class="row justify-content-center  pb-5 pt-5">
+    <div class="row justify-content-center py-3 video">
       <div class="col-md-6">
+        <h2 class="font text-center pb-2">Header for the video.</h2>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/znliDeZOZx0" allowfullscreen></iframe>
         </div>
@@ -97,58 +98,55 @@
     </div>
   </div>
   <div class="container">
-    <h4 class="text-center my-5">
+    <h2 class="text-center my-3">
       <span class="font">Look at what our readers are saying!</span>
-    </h4>
+    </h2>
     <div class="card-deck mb-3">
       <div class="card mb-4 box-shadow">
         <div class="card-body">
-          <p>“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+          <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
             vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-        </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Pro</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15
-            <small class="text-muted">/ mo</small>
-          </h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>20 users included</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+          <div class="d-flex align-items-center">
+            <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+            <span>
+              <p>Samantha T. Farmer
+                <br> Mother of 2</p>
+            </span>
+          </div>
         </div>
       </div>
       <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Enterprise</h4>
-        </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29
-            <small class="text-muted">/ mo</small>
-          </h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+            vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
+          <div class="d-flex align-items-center">
+            <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+            <span>
+              <p>Samantha T. Farmer
+                <br> Mother of 2</p>
+            </span>
+          </div>
         </div>
       </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-body">
+          <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+            vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
+          <div class="d-flex align-items-center">
+            <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+            <span>
+              <p>Samantha T. Farmer
+                <br> Mother of 2</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
   <div class="container-fluid">
     <footer class="border-top">
-      <p>B is for Bitcoin</p>
+      <h3 class="font">B is for Bitcoin</h3>
     </footer>
   </div>
 

@@ -13,6 +13,7 @@
 }
 p,h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .navbar-brand {
   font-size: 2em;
@@ -29,16 +30,22 @@ p,h1,h2,h3,h4,h5,h6 {
 .hero-blurb {
   font-weight: 300;
 }
-  #mainNav {
-    border-color: rgba(34, 34, 34, 0.05);
-    background-color: white;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-    font-weight: 200;
-    letter-spacing: 1px;
-  }
-
+#mainNav {
+  border-color: rgba(34, 34, 34, 0.05);
+  background-color: white;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.ships {
+  font-weight: 500;
+  color: #3B5F74;
+}
+.video {
+  background: #A5D2EC;
+}
   @media(min-width: 992px) {
     #mainNav {
       border-color: transparent;
