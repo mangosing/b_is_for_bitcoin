@@ -9,6 +9,11 @@
 }
 select {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  
   border: 0;
   color: #2f4d5f;
   background: transparent;
