@@ -7,13 +7,13 @@
     font-weight: normal;
     font-style: normal;
 }
-select {
+.b-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  
+
   border: 0;
   color: #2f4d5f;
   background: transparent;
@@ -92,13 +92,13 @@ footer {
     .logo {
       font-size: 56px;
     }
-    .b-select {
+    /* .b-select {
       background: #729BB3;
       outline: 2px solid #729BB3;
       border: 0;
       outline-offset: -1px;
       color: white;
-    }
+    } */
     .card-shadow {
       -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.17);
       -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.17);
