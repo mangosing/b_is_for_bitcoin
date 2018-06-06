@@ -97,6 +97,9 @@ p,h1,h2,h3,h4,h5,h6 {
   font-family: 'DK-Canoodle-Regular';
   font-size: 24px;
 }
+.b-nav {
+  font-size: 24px;
+}
 .b-nav a {
   font-size: 24px;
   color: #3b5e74;
