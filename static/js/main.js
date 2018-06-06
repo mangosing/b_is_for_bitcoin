@@ -2,28 +2,28 @@
     "use strict"; // Start of use strict
 
     // // Smooth scrolling using jQuery easing
-    // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    //     var target = $(this.hash);
-    //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    //     if (target.length) {
-    //       $('html, body').animate({
-    //         scrollTop: (target.offset().top - 48)
-    //       }, 1000, "easeInOutExpo");
-    //       return false;
+    // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    //         var target = $(this.hash);
+    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    //         if (target.length) {
+    //             $('html, body').animate({
+    //                 scrollTop: (target.offset().top - 48)
+    //             }, 1000, "easeInOutExpo");
+    //             return false;
+    //         }
     //     }
-    //   }
     // });
 
     // // Closes responsive menu when a scroll trigger link is clicked
-    // $('.js-scroll-trigger').click(function() {
-    //   $('.navbar-collapse').collapse('hide');
+    // $('.js-scroll-trigger').click(function () {
+    //     $('.navbar-collapse').collapse('hide');
     // });
 
     // // Activate scrollspy to add active class to navbar items on scroll
     // $('body').scrollspy({
-    //   target: '#mainNav',
-    //   offset: 54
+    //     target: '#mainNav',
+    //     offset: 54
     // });
 
 
@@ -75,5 +75,21 @@
     });
 
     $(".stripe-button-el").replaceWith('<input type="Submit" class="btn btn-block b-btn" value="Buy Now!">');
+
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html,body').animate({
+            'scrollTop': $target.offset().top
+        }, 1000, 'swing', function () {
+            window.location.hash = target;
+        });
+
+
+        console.log($target)
+    })
 
 })(jQuery); // End of use strict
