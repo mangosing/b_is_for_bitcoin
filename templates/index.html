@@ -26,22 +26,22 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-4">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#about">
             <span class="font b-nav">About the book</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#testimonials">
             <span class="font b-nav">Testimonials</span>
           </a>
         </li>
       </ul>
-      <button class="btn b-btn" type="submit">Buy Now!</button>
+      <a class="btn b-btn" href="#top">Buy Now!</a>
     </div>
   </nav>
 
 
-  <div class="container-fluid blue">
+  <div class="container-fluid blue" id="top">
     <div class="row hero">
       <section class="col-md-6 d-flex align-items-center">
         <div>
@@ -75,7 +75,7 @@
   </div>
   <!-- </div> -->
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="about">
     <div class="row pt-5 pb-2 d-flex align-items-center">
       <section class="col-md-6">
         <img class="img-fluid" src="{{ url_for('static', filename='images/test.png') }}" alt="B is fot Bitcoin Roller Coaster">
@@ -102,7 +102,7 @@
     </div>
   </div>
 
-  <div class="container my-5">
+  <div class="container my-5" id="testimonials">
     <div class="row text-center">
       <h2 class="font col-md-12">See what our readers are saying!</h2>
     </div>
@@ -195,9 +195,15 @@
     <footer class="border-top py-3 footer">
       <h3 class="font footer-header">B is for Bitcoin</h3>
       <ul class="list-unstyled">
-        <li class="list-inline-item font b-nav">About the book</li>
-        <li class="list-inline-item font b-nav">Testimonials</li>
-        <li class="list-inline-item font btn b-btn">Buy Now!</li>
+        <li class="list-inline-item font b-nav">
+          <a href="#about">About the book</a>
+        </li>
+        <li class="list-inline-item font b-nav">
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li class="list-inline-item font">
+          <a href="#top" class="btn b-btn">Buy Now!</a>
+        </li>
       </ul>
     </footer>
   </div>
