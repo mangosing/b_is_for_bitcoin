@@ -26,6 +26,8 @@
     //   offset: 54
     // });
 
+
+
     // manual carousel controls
     $('.next').click(function () { $('.carousel').carousel('next'); return false; });
     $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
@@ -42,5 +44,13 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    //Slick Slider
+    $('.slick-slider').slick({
+        autoplay: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
 
 })(jQuery); // End of use strict

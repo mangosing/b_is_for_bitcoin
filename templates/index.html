@@ -9,6 +9,7 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick/slick-theme.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <title>B is for Bitcoin</title>
 </head>
@@ -105,8 +106,40 @@
     <div class="row text-center">
       <h2 class="font col-md-12">See what our readers are saying!</h2>
     </div>
-    <div class="row py-5">
-      <section class="col-md-4 my-3">
+    <div class="row py-5  slick-slider">
+      <section class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+              vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
+            <div class="d-flex align-items-center">
+              <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+              <span>
+                <p>Samantha T. Farmer
+                  <br> Mother of 2</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+              vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
+            <div class="d-flex align-items-center">
+              <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+              <span>
+                <p>Samantha T. Farmer
+                  <br> Mother of 2</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-md-4">
         <div class="card">
           <div class="card-body">
             <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
@@ -179,13 +212,14 @@
     crossorigin="anonymous"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
 
   <!-- Main Landing Page JavaScript File   -->
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-  <!-- Slick Slider -->
-  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>
