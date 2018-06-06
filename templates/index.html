@@ -41,10 +41,10 @@
 
   <div class="container-fluid blue">
     <div class="row hero">
-      <section class="col-md-4 d-flex align-items-center">
+      <section class="col-md-6 d-flex align-items-center">
         <div>
           <h3 class="hero-blurb my-4">A lovingly written and illustrated children's primer on Bitcoin from Algorithm to Zero knoweldge proof.</h3>
-          <form>
+          <form class="order-form">
             <div class="form-group">
               <select class="form-control b-select">
                 <option>1 copy for yourself (I mean your child)</option>
@@ -63,7 +63,7 @@
           </p>
         </div>
       </section>
-      <section class="col-md-6 hero-img offset-md-2">
+      <section class="col-md-6 hero-img">
         <img class="img-fluid" src="{{ url_for('static', filename='images/test1.png') }}" alt="B is fot Bitcoin Roller Coaster">
       </section>
     </div>
@@ -71,7 +71,7 @@
   <!-- </div> -->
 
   <div class="container-fluid">
-    <div class="row py-5">
+    <div class="row pt-5 pb-2 d-flex align-items-center">
       <section class="col-md-6">
         <img class="img-fluid" src="{{ url_for('static', filename='images/test.png') }}" alt="B is fot Bitcoin Roller Coaster">
       </section>
@@ -89,9 +89,64 @@
 
     <div class="row py-5">
       <section class="col-md-6 offset-md-3">
-        <h1>Video Section goes here!!!!!!</h1>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        <h1 class="font text-center">Video Section goes here!!!!!!</h1>
+        <div class="embed-responsive embed-responsive-16by9 shadow-lg">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="font">See what our readers are saying!</h2>
+    </div>
+    <div class="row">
+      <section class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+              vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
+            <div class="d-flex align-items-center">
+              <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+              <span>
+                <p>Samantha T. Farmer
+                  <br> Mother of 2</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+              vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
+            <div class="d-flex align-items-center">
+              <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+              <span>
+                <p>Samantha T. Farmer
+                  <br> Mother of 2</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="border-bottom py-3">“Meditation pug polaroid, brunch craft beer gluten-free snackwave franzen taiyaki. Polaroid next level readymade
+              vexillologist lyft microdosing. Health goth keffiyeh polaroid wolf.”</p>
+            <div class="d-flex align-items-center">
+              <img src="http://via.placeholder.com/55x55" alt="Picture of person" class="rounded-circle mr-4">
+              <span>
+                <p>Samantha T. Farmer
+                  <br> Mother of 2</p>
+              </span>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -101,7 +156,7 @@
 
   <div class="container-fluid">
     <footer class="border-top py-3 footer">
-      <h3 class="font">B is for Bitcoin</h3>
+      <h3 class="font footer-header">B is for Bitcoin</h3>
       <ul class="list-unstyled">
         <li class="list-inline-item font b-nav">About the book</li>
         <li class="list-inline-item font b-nav">Testimonials</li>
