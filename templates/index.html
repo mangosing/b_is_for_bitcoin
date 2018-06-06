@@ -45,7 +45,7 @@
       <section class="col-md-6 d-flex align-items-center">
         <div>
           <h3 class="hero-blurb my-4">A lovingly written and illustrated children's primer on Bitcoin from Algorithm to Zero knoweldge proof.</h3>
-          <form class="order-form">
+          <form class="order-form" action="/charge" method="post">
             <div class="form-group">
               <select class="form-control b-select">
                 <option>1 copy for yourself (I mean your child)</option>
@@ -58,6 +58,9 @@
               </select>
             </div>
             <input type="Submit" class="btn btn-block b-btn" value="Buy Now!">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ key }}" data-description="B is for Bitcoin"
+              data-amount="500" data-locale="auto" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-billing-address=True data-shipping-address=True></script>
           </form>
           <p>
             <small class="ships">Ships with love from San Francisco in 3-5 days</small>
@@ -180,6 +183,9 @@
 
   <!-- Main Landing Page JavaScript File   -->
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>
