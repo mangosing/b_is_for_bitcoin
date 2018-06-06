@@ -83,6 +83,20 @@ p,h1,h2,h3,h4,h5,h6 {
   background-color: rgb(50, 83, 102);
   border-color: rgb(50, 83, 102);
 }
+.stripe-button-el {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0;
+  background: #3B5F74;
+}
+.stripe-button-el span {
+  display: block;
+  min-height: 30px;
+  background: #3B5F74;
+  box-shadow: none;
+  font-family: 'DK-Canoodle-Regular';
+  font-size: 24px;
+}
 .b-nav {
   font-size: 24px; 
 }
