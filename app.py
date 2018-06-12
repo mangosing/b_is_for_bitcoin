@@ -14,7 +14,7 @@ stripe.api_key = stripe_keys['secret_key']
 app = Flask(__name__)
 
 if os.environ.get('ENV') == 'production':
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('postgresql-encircled-33501')
 else:
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://localhost/bitcoin-db'
 
