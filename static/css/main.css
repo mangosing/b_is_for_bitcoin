@@ -136,6 +136,7 @@ p,h1,h2,h3,h4,h5,h6 {
       justify-content: space-between;
     }
   }
+
   @media(min-width: 992px) {
     #mainNav {
       border-color: transparent;
@@ -146,7 +147,7 @@ p,h1,h2,h3,h4,h5,h6 {
       justify-content: space-between;
     }
     .order-form {
-      margin-right: 15rem;
+      margin-right: 2rem;
     }
     .card-shadow {
       -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.17);
@@ -155,6 +156,11 @@ p,h1,h2,h3,h4,h5,h6 {
     }
     .footer {
       flex-direction: row;
+    }
+  }
+  @media(min-width: 1200px){
+    .order-form {
+      margin-right: 15rem;
     }
   }
 
