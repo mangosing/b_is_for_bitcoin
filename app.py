@@ -1,16 +1,18 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 import stripe
 
 stripe_keys = {
-  'secret_key': os.environ.get('SECRET_KEY'),
+  'secret_key': os.environ.get('STRIPE_SECRET_KEY'),
   'publishable_key': os.environ.get('PUBLISHABLE_KEY')
 }
 
 stripe.api_key = stripe_keys['secret_key']
 
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 if os.environ.get('ENV') == 'production':
     app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
@@ -129,7 +131,7 @@ def charge():
         )
     db.session.add(new_purchaser)
     db.session.commit()
-
+    flash("Thank you! You have successfully purchased the book.")
     return redirect(url_for('index'))
 
 if __name__ == '__main__':

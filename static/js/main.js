@@ -47,7 +47,7 @@
         ]
     });
 
-    $(".stripe-button-el").replaceWith('<input type="Submit" class="btn btn-block b-btn" value="Buy Now!">');
+    // $("#customButton").replaceWith('<input type="Submit" class="btn btn-block b-btn" value="Buy Now!" id="customButton">');
 
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
