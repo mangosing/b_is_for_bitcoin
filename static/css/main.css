@@ -77,8 +77,8 @@ p,h1,h2,h3,h4,h5,h6 {
 }
 .b-btn:hover {
   color: #fff;
-  background-color: rgb(50, 83, 102);
-  border-color: rgb(50, 83, 102);
+  background-color: #5e89a2;
+  border-color: #5e89a2;
 }
 .stripe-button-el {
   width: 100%;
@@ -102,10 +102,12 @@ p,h1,h2,h3,h4,h5,h6 {
   color: #3b5e74;
 }
 .b-nav a:hover {
-  /* color: #5985a0; */
+  color: #5e89a2;
   text-decoration: none
 }
-
+.b-nav:hover {
+  color: #5e89a2;
+}
 .footer {
   display: flex;
   flex-direction: column;
