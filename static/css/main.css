@@ -142,10 +142,6 @@ p,h1,h2,h3,h4,h5,h6 {
       border-color: transparent;
       background-color: transparent;
     }
-    .logo {
-      font-size: 56px;
-      justify-content: space-between;
-    }
     .order-form {
       margin-right: 2rem;
     }
