@@ -104,7 +104,8 @@ def charge():
         customer=customer.id,
         amount=amount,
         currency='usd',
-        description='Flask Charge'
+        description='Flask Charge',
+        receipt_email='seanmangosing@gmail.com',
     )
 
     new_purchaser = Purchaser(
