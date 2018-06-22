@@ -105,7 +105,7 @@ def charge():
         amount=amount,
         currency='usd',
         description='Flask Charge',
-        receipt_email='seanmangosing@gmail.com',
+        receipt_email=request.form['stripeEmail'],
     )
 
     new_purchaser = Purchaser(
