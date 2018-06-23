@@ -85,7 +85,8 @@ def index():
 @app.route('/charge', methods=['POST'])
 def charge():
 
-    print(request.form)
+    s_token = request.form['stripeToken']
+    print(str(s_token))
 
     cost = request.form['bookAmount']
     
@@ -100,7 +101,7 @@ def charge():
 
     customer = stripe.Customer.create(
         email=request.form['stripeEmail'],
-        source=request.form['stripeToken']
+        source=s_token
     )
 
     charge = stripe.Charge.create(
