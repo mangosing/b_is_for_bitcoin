@@ -34,7 +34,7 @@ class Purchaser(db.Model):
     billing_name = db.Column(db.Text)
     billing_country = db.Column(db.Text)
     billing_country_code = db.Column(db.Text)
-    billing_zip = db.Column(db.Integer)
+    billing_zip = db.Column(db.Text)
     billing_address_line_1 = db.Column(db.Text)
     billing_city = db.Column(db.Text)
     billing_state = db.Column(db.Text)
@@ -42,7 +42,7 @@ class Purchaser(db.Model):
     shipping_name = db.Column(db.Text)
     shipping_country = db.Column(db.Text)
     shipping_country_code = db.Column(db.Text)
-    shipping_zip = db.Column(db.Integer)
+    shipping_zip = db.Column(db.Text)
     shipping_address_line_1 = db.Column(db.Text)
     shipping_city = db.Column(db.Text)
     shipping_state = db.Column(db.Text)
@@ -62,6 +62,7 @@ class Purchaser(db.Model):
         self.billing_address_line_1 = billing_address_line_1
         self.billing_city = billing_city
         self.billing_state = billing_state
+        
         self.shipping_name = shipping_name
         self.shipping_country = shipping_country
         self.shipping_country_code = shipping_country_code
@@ -69,6 +70,7 @@ class Purchaser(db.Model):
         self.shipping_address_line_1 = shipping_address_line_1
         self.shipping_city = shipping_city
         self.shipping_state = shipping_state
+
         self.price_paid = price_paid
         self.order_quantity = order_quanity
         self.has_shipped = has_shipped
@@ -92,6 +94,7 @@ def charge():
     price_paid = str('${:,.2f}'.format(dollars))
 
     print(price_paid)
+    print(order_quanity)
     # Amount in cents
     amount = int(cost)
 
@@ -112,6 +115,7 @@ def charge():
         request.form['stripeToken'],
         request.form['stripeTokenType'],
         request.form['stripeEmail'],
+
         request.form['stripeBillingName'],
         request.form['stripeBillingAddressCountry'],
         request.form['stripeBillingAddressCountryCode'],
@@ -119,6 +123,7 @@ def charge():
         request.form['stripeBillingAddressLine1'],
         request.form['stripeBillingAddressCity'],
         request.form['stripeBillingAddressState'],
+        
         request.form['stripeShippingName'],
         request.form['stripeShippingAddressCountry'],
         request.form['stripeShippingAddressCountryCode'],
@@ -126,13 +131,13 @@ def charge():
         request.form['stripeShippingAddressLine1'],
         request.form['stripeShippingAddressCity'],
         request.form['stripeShippingAddressState'],
+
         price_paid,
         order_quanity,
         False
         )
     db.session.add(new_purchaser)
     db.session.commit()
-    flash("Thank you! You have successfully purchased the book.")
     return redirect(url_for('index'))
 
 if __name__ == '__main__':

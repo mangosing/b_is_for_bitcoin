@@ -66,23 +66,64 @@
                 <option value="250000">100 for everyone you know!!!</option>
               </select>
             </div>
+            <input type="hidden" id="stripeToken" name="stripeToken" />
+            <input type="hidden" id="stripeEmail" name="stripeEmail" />
+            <input type="hidden" id="stripeTokenType" name="stripeTokenType" />
+
+            <input type="hidden" id="stripeBillingName" name="stripeBillingName" />
+            <input type="hidden" id="stripeBillingAddressCountry" name="stripeBillingAddressCountry" />
+            <input type="hidden" id="stripeBillingAddressCountryCode" name="stripeBillingAddressCountryCode" />
+            <input type="hidden" id="stripeBillingAddressZip" name="stripeBillingAddressZip" />
+            <input type="hidden" id="stripeBillingAddressLine1" name="stripeBillingAddressLine1" />
+            <input type="hidden" id="stripeBillingAddressCity" name="stripeBillingAddressCity" />
+            <input type="hidden" id="stripeBillingAddressState" name="stripeBillingAddressState" />
+
+            <input type="hidden" id="stripeShippingName" name="stripeShippingName" />
+            <input type="hidden" id="stripeShippingAddressCountry" name="stripeShippingAddressCountry" />
+            <input type="hidden" id="stripeShippingAddressCountryCode" name="stripeShippingAddressCountryCode" />
+            <input type="hidden" id="stripeShippingAddressZip" name="stripeShippingAddressZip" />
+            <input type="hidden" id="stripeShippingAddressLine1" name="stripeShippingAddressLine1" />
+            <input type="hidden" id="stripeShippingAddressCity" name="stripeShippingAddressCity" />
+            <input type="hidden" id="stripeShippingAddressState" name="stripeShippingAddressState" />
+
+
+
 
             <!-- <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ key }}" data-description="B is for Bitcoin"
               data-label="Buy Me" data-locale="auto" data-image="{{ url_for('static', filename='images/b_coaster.png') }}"
               data-billing-address=True data-shipping-address=True>
                 console.log("Yup")
               </script> -->
+
             <script src="https://checkout.stripe.com/checkout.js"></script>
 
-            <button id="customButton" class="btn btn-block b-btn">Buy Now!</button>
+            <input type="submit" id="customButton" class="btn btn-block b-btn" value="Buy Now!">
 
             <script>
               var handler = StripeCheckout.configure({
                 key: "{{ key }}",
-                image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-                locale: 'auto',
-                token: function (token) {
+                token: function (token, args) {
+                  $("#stripeToken").val(token.id);
+                  $("#stripeEmail").val(token.email);
+                  $("#stripeTokenType").val(token.type);
 
+                  $("#stripeBillingName").val(args.billing_name);
+                  $("#stripeBillingAddressCountry").val(args.billing_address_country);
+                  $("#stripeBillingAddressCountryCode").val(args.billing_address_country_code)
+                  $("#stripeBillingAddressZip").val(args.billing_address_zip)
+                  $("#stripeBillingAddressState").val(args.billing_address_state)
+                  $("#stripeBillingAddressLine1").val(args.billing_address_line1)
+                  $("#stripeBillingAddressCity").val(args.billing_address_city)
+
+                  $("#stripeShippingName").val(args.shipping_name);
+                  $("#stripeShippingAddressCountry").val(args.shipping_address_country);
+                  $("#stripeShippingAddressCountryCode").val(args.shipping_address_country_code)
+                  $("#stripeShippingAddressZip").val(args.shipping_address_zip)
+                  $("#stripeShippingAddressState").val(args.shipping_address_state)
+                  $("#stripeShippingAddressLine1").val(args.shipping_address_line1)
+                  $("#stripeShippingAddressCity").val(args.shipping_address_city)
+
+                  $(".order-form").submit()
                 }
               });
 
@@ -101,10 +142,12 @@
                   amount: parseInt(option[x].value)
                 });
                 e.preventDefault();
+                console.log("Hit the button!")
               });
-
+              console.log("Middle Part!!!!!!!!")
               // Close Checkout on page navigation:
               window.addEventListener('popstate', function () {
+                console.log("Finished!!!!!")
                 handler.close();
               });
             </script>
