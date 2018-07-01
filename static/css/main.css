@@ -1,11 +1,8 @@
-@font-face {
-    font-family: 'DK-Canoodle-Regular';
-    src: url('../fonts/DK-Canoodle-Regular.ttf.woff'),
-    url('../fonts/DK-Canoodle-Regular.ttf.svg#DK-Canoodle-Regular'),
-    url('../fonts/DK-Canoodle-Regular.ttf.eot'),
-    url('../fonts/DK-Canoodle-Regular.ttf.eot?#iefix');
-    font-weight: normal;
-    font-style: normal;
+.logo {
+  width: 250px;
+}
+.logo-footer {
+  width: 235px;
 }
 .b-select {
   -webkit-appearance: none;
@@ -29,7 +26,7 @@
   outline: none;
 }
 .font {
-  font-family: 'DK-Canoodle-Regular';
+  font-family: 'Londrina Solid', cursive;
   color: #3B5F74;
 }
 p,h1,h2,h3,h4,h5,h6 {
@@ -75,13 +72,13 @@ p,h1,h2,h3,h4,h5,h6 {
   border-color: #3B5F74;
   border-radius: 0;
   color: #ffffff;
-  font-family: 'DK-Canoodle-Regular';
+  font-family: 'Londrina Solid', cursive;
   font-size: 24px;
 }
 .b-btn:hover {
   color: #fff;
-  background-color: rgb(50, 83, 102);
-  border-color: rgb(50, 83, 102);
+  background-color: #5e89a2;
+  border-color: #5e89a2;
 }
 .stripe-button-el {
   width: 100%;
@@ -105,10 +102,12 @@ p,h1,h2,h3,h4,h5,h6 {
   color: #3b5e74;
 }
 .b-nav a:hover {
-  /* color: #5985a0; */
+  color: #5e89a2;
   text-decoration: none
 }
-
+.b-nav:hover {
+  color: #5e89a2;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -138,13 +137,12 @@ p,h1,h2,h3,h4,h5,h6 {
   }
 
   @media(min-width: 992px) {
+    .logo {
+      width: 425px;
+    }
     #mainNav {
       border-color: transparent;
       background-color: transparent;
-    }
-    .logo {
-      font-size: 56px;
-      justify-content: space-between;
     }
     .order-form {
       margin-right: 2rem;

@@ -47,7 +47,7 @@
         ]
     });
 
-    $(".stripe-button-el").replaceWith('<input type="Submit" class="btn btn-block b-btn" value="Buy Now!">');
+    $(".stripe-button-el").replaceWith('<input type="Submit" class="btn btn-block b-btn" value="Buy Now!" id="customButton">');
 
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
@@ -57,7 +57,7 @@
 
         $('html,body').animate({
             'scrollTop': $target.offset().top
-        }, 1000, 'swing', function () {
+        }, 10, 'swing', function () {
             window.location.hash = target;
         });
 

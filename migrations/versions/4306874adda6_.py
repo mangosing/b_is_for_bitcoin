@@ -1,8 +1,8 @@
-"""updated model
+"""empty message
 
-Revision ID: 64643b867df6
+Revision ID: 4306874adda6
 Revises: 
-Create Date: 2018-06-12 15:32:13.587749
+Create Date: 2018-06-23 14:03:59.900445
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '64643b867df6'
+revision = '4306874adda6'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -26,14 +26,14 @@ def upgrade():
     sa.Column('billing_name', sa.Text(), nullable=True),
     sa.Column('billing_country', sa.Text(), nullable=True),
     sa.Column('billing_country_code', sa.Text(), nullable=True),
-    sa.Column('billing_zip', sa.Integer(), nullable=True),
+    sa.Column('billing_zip', sa.Text(), nullable=True),
     sa.Column('billing_address_line_1', sa.Text(), nullable=True),
     sa.Column('billing_city', sa.Text(), nullable=True),
     sa.Column('billing_state', sa.Text(), nullable=True),
     sa.Column('shipping_name', sa.Text(), nullable=True),
     sa.Column('shipping_country', sa.Text(), nullable=True),
     sa.Column('shipping_country_code', sa.Text(), nullable=True),
-    sa.Column('shipping_zip', sa.Integer(), nullable=True),
+    sa.Column('shipping_zip', sa.Text(), nullable=True),
     sa.Column('shipping_address_line_1', sa.Text(), nullable=True),
     sa.Column('shipping_city', sa.Text(), nullable=True),
     sa.Column('shipping_state', sa.Text(), nullable=True),
