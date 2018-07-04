@@ -18,9 +18,6 @@
 </head>
 
 <body>
-  <!-- <div class="alert alert-success" role="alert">
-    {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
-  </div> -->
   <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="mainNav">
     <a class="navbar-brand" href="{{ url_for('index') }}">
       <span class="font logo">
@@ -85,15 +82,6 @@
             <input type="hidden" id="stripeShippingAddressLine1" name="stripeShippingAddressLine1" />
             <input type="hidden" id="stripeShippingAddressCity" name="stripeShippingAddressCity" />
             <input type="hidden" id="stripeShippingAddressState" name="stripeShippingAddressState" />
-
-
-
-
-            <!-- <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ key }}" data-description="B is for Bitcoin"
-              data-label="Buy Me" data-locale="auto" data-image="{{ url_for('static', filename='images/b_coaster.png') }}"
-              data-billing-address=True data-shipping-address=True>
-                console.log("Yup")
-              </script> -->
 
             <script src="https://checkout.stripe.com/checkout.js"></script>
 
@@ -173,7 +161,9 @@
       <section class="col-md-6 d-flex align-items-center">
         <div>
           <h2 class="font">Profits go to supporting early childhood education</h2>
-          <p>Before having our first child, I didn't personally appreciate the critical importance of early childhood education.  Now I do.  If you buy B for Bitcoin know that all the profits from the book are going to early childhood education non-profits</p>
+          <p>Before having our first child, I didn't personally appreciate the critical importance of early childhood education.
+            Now I do. If you buy B for Bitcoin know that all the profits from the book are going to early childhood education
+            non-profits</p>
         </div>
       </section>
     </div>

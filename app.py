@@ -138,7 +138,7 @@ def charge():
         )
     db.session.add(new_purchaser)
     db.session.commit()
-    return redirect(url_for('index'))
+    return render_template('bitcoin_confirmation.html')
 
 if __name__ == '__main__':
   app.run(debug=True, port=5000)
