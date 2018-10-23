@@ -24,8 +24,8 @@
         <img class="img-fluid logo" src="{{ url_for('static', filename='images/bitcoin_logo.svg') }}" alt="B is fot Bitcoin Roller Coaster">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon ml-auto"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -49,7 +49,8 @@
     <div class="row hero">
       <section class="col-md-6 d-flex align-items-center">
         <div>
-          <h3 class="hero-blurb my-4">A lovingly written and illustrated children's primer on Bitcoin from Algorithm to Zero knowledge proof written by <a href="https://www.twitter.com/lessin">@lessin</a></h3>
+          <h3 class="hero-blurb my-4">A lovingly written and illustrated children's primer on Bitcoin from Algorithm to
+            Zero knowledge proof written by <a href="https://www.twitter.com/lessin">@lessin</a></h3>
           <form class="order-form" action="/charge" method="post">
             <div class="form-group">
               <select class="form-control b-select" name="bookAmount" id="mySelect">
@@ -142,11 +143,7 @@
           </form>
           <p>
             <small class="ships">
-              $25 per pre-release copy.<br>
-
               All profits go to support early childhood education programs.<br>
-
-              Ships with love from San Francisco in July. <br>
 
               Checkout secured via stripe.
             </small>
@@ -161,14 +158,15 @@
   <!-- </div> -->
 
 
-    <div class="row pt-1 pb-5">
-      <section class="col-md-6 offset-md-3">
-        <h2 class="font text-center mt-5 mb-3">Learn more about the book... </h2>
-        <div class="embed-responsive embed-responsive-16by9 shadow-lg">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x9Zh6lCtLjU" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </section>
-    </div>
+  <div class="row pt-1 pb-5">
+    <section class="col-md-6 offset-md-3">
+      <h2 class="font text-center mt-5 mb-3">Learn more about the book... </h2>
+      <div class="embed-responsive embed-responsive-16by9 shadow-lg">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x9Zh6lCtLjU" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </div>
   </div>
 
   <div class="container-fluid" id="about">
@@ -179,150 +177,158 @@
       <section class="col-md-6 d-flex align-items-center">
         <div>
           <h2 class="font">Profits go to supporting early childhood education</h2>
-          <p>Before having our first child, I didn't personally appreciate the critical importance of early childhood education.
-            Now I do. If you buy B for Bitcoin know that all the profits from the book are going to early childhood education
+          <p>Before having our first child, I didn't personally appreciate the critical importance of early childhood
+            education.
+            Now I do. If you buy B for Bitcoin know that all the profits from the book are going to early childhood
+            education
             non-profits</p>
         </div>
       </section>
     </div>
 
 
-  <div class="container my-5" id="testimonials">
-    <div class="row text-center">
-      <h2 class="font col-md-12">See what our readers are saying!</h2>
+    <div class="container my-5" id="testimonials">
+      <div class="row text-center">
+        <h2 class="font col-md-12">See what our readers are saying!</h2>
+      </div>
+      <div class="row pt-3 pb-5  slick-slider">
+        <section class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="border-bottom py-3">“Don't trust your 2 year old with your private keys until she has read
+                this”</p>
+              <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/dk2.png') }}" alt="Picture of person" class="rounded-circle mr-4 img-fluid">
+                <span>
+                  <p>David King
+                    <br>Founder, Curious Conversations</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="border-bottom py-3">“D is for Delightful. This is the single best crypto primer ever
+                written…for toddlers.”</p>
+              <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/ab.png') }}" alt="Picture of person" class="rounded-circle mr-4">
+                <span>
+                  <p>Aryeh Bourkoff
+                    <br>Founder, Liontree</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="border-bottom py-3">“Baby Einstein and Baby Mozart were okay, but what the world has been
+                waiting for is Baby Satoshi!”</p>
+              <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/jc.png') }}" alt="Picture of person" class="rounded-circle mr-4">
+                <span>
+                  <p>Jill Carlson
+                    <br> @_jillruth</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="border-bottom py-3">“Don't trust your 2 year old with your private keys until she has read
+                this”</p>
+              <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/dk2.png') }}" alt="Picture of person" class="rounded-circle mr-4 img-fluid">
+                <span>
+                  <p>David King
+                    <br>Founder, Curious Conversations</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="border-bottom py-3">“D is for Delightful. This is the single best crypto primer ever
+                written…for toddlers.”</p>
+              <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/ab.png') }}" alt="Picture of person" class="rounded-circle mr-4">
+                <span>
+                  <p>Aryeh Bourkoff
+                    <br>Founder, Liontree</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="border-bottom py-3">“Baby Einstein and Baby Mozart were okay, but what the world has been
+                waiting for is Baby Satoshi!”</p>
+              <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/jc.png') }}" alt="Picture of person" class="rounded-circle mr-4">
+                <span>
+                  <p>Jill Carlson
+                    <br> @_jillruth</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </div>
-    <div class="row pt-3 pb-5  slick-slider">
-      <section class="col-sm-12 col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p class="border-bottom py-3">“Don't trust your 2 year old with your private keys until she has read this”</p>
-            <div class="d-flex align-items-center">
-              <img src="{{ url_for('static', filename='images/dk2.png') }}" alt="Picture of person" class="rounded-circle mr-4 img-fluid">
-              <span>
-                <p>David King
-                  <br>Founder, Curious Conversations</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="col-sm-12 col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p class="border-bottom py-3">“D is for Delightful. This is the single best crypto primer ever written…for toddlers.”</p>
-            <div class="d-flex align-items-center">
-              <img src="{{ url_for('static', filename='images/ab.png') }}" alt="Picture of person" class="rounded-circle mr-4">
-              <span>
-                <p>Aryeh Bourkoff
-                  <br>Founder, Liontree</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="col-sm-12 col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p class="border-bottom py-3">“Baby Einstein and Baby Mozart were okay, but what the world has been waiting for is Baby Satoshi!”</p>
-            <div class="d-flex align-items-center">
-              <img src="{{ url_for('static', filename='images/jc.png') }}" alt="Picture of person" class="rounded-circle mr-4">
-              <span>
-                <p>Jill Carlson
-                  <br> @_jillruth</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
-      <section class="col-sm-12 col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p class="border-bottom py-3">“Don't trust your 2 year old with your private keys until she has read this”</p>
-            <div class="d-flex align-items-center">
-              <img src="{{ url_for('static', filename='images/dk2.png') }}" alt="Picture of person" class="rounded-circle mr-4 img-fluid">
-              <span>
-                <p>David King
-                  <br>Founder, Curious Conversations</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="col-sm-12 col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p class="border-bottom py-3">“D is for Delightful. This is the single best crypto primer ever written…for toddlers.”</p>
-            <div class="d-flex align-items-center">
-              <img src="{{ url_for('static', filename='images/ab.png') }}" alt="Picture of person" class="rounded-circle mr-4">
-              <span>
-                <p>Aryeh Bourkoff
-                  <br>Founder, Liontree</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="col-sm-12 col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <p class="border-bottom py-3">“Baby Einstein and Baby Mozart were okay, but what the world has been waiting for is Baby Satoshi!”</p>
-            <div class="d-flex align-items-center">
-              <img src="{{ url_for('static', filename='images/jc.png') }}" alt="Picture of person" class="rounded-circle mr-4">
-              <span>
-                <p>Jill Carlson
-                  <br> @_jillruth</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <div class="container-fluid">
+      <footer class="border-top py-3 footer">
+        <img class="img-fluid logo-footer" src="{{ url_for('static', filename='images/bitcoin_logo.svg') }}" alt="B is fot Bitcoin Roller Coaster">
+        <ul class="list-unstyled">
+          <li class="list-inline-item font b-nav">
+            <a href="#about">About the book</a>
+          </li>
+          <li class="list-inline-item font b-nav">
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li class="list-inline-item font">
+            <a href="#top" class="btn b-btn">Buy Now!</a>
+          </li>
+        </ul>
+      </footer>
     </div>
-  </div>
 
 
 
-  <div class="container-fluid">
-    <footer class="border-top py-3 footer">
-      <img class="img-fluid logo-footer" src="{{ url_for('static', filename='images/bitcoin_logo.svg') }}" alt="B is fot Bitcoin Roller Coaster">
-      <ul class="list-unstyled">
-        <li class="list-inline-item font b-nav">
-          <a href="#about">About the book</a>
-        </li>
-        <li class="list-inline-item font b-nav">
-          <a href="#testimonials">Testimonials</a>
-        </li>
-        <li class="list-inline-item font">
-          <a href="#top" class="btn b-btn">Buy Now!</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+    <!-- Core Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
 
-  <!-- Core Bootstrap Javascript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-  <!-- Slick Slider -->
-  <script type="text/javascript" src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
-
-  <!-- Main Landing Page JavaScript File   -->
-  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Main Landing Page JavaScript File   -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 
